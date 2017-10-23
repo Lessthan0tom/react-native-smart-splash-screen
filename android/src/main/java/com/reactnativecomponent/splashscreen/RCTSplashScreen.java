@@ -12,7 +12,7 @@ import android.view.animation.AnimationSet;
 import android.view.animation.ScaleAnimation;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-
+import android.graphics.Color;
 import java.lang.ref.WeakReference;
 
 
@@ -60,7 +60,7 @@ public class RCTSplashScreen {
 
                     imageView.setImageResource(drawableId);
                     imageView.setScaleType(scaleType);
-
+                    imageView.setBackgroundColor(Color.rgb(255, 255, 255));
                     dialog = new Dialog(context, isFullScreen ? android.R.style.Theme_Translucent_NoTitleBar_Fullscreen : android.R.style.Theme_Translucent_NoTitleBar);
 
 //                    if ((getActivity().getWindow().getAttributes().flags & WindowManager.LayoutParams.FLAG_FULLSCREEN)
